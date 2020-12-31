@@ -7,235 +7,38 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="../default.css">
     <style>
-        .page {
+        .flex-container {
             display: flex;
-            flex-direction: column;
-            height: 100vh;
+            /* height: 100vh; */
+            /* align-items: center; */
         }
-        .content {
-            overflow: auto;
-            flex: 1 auto;
-            padding: 1.5rem;
+        /* .flex-item {
+            align-self: stretch;
+        } */
+        .flex-item:nth-child(1) {
+            /* order: 1; */
+            z-index: 5;
+            transform: scale(1.5);
+        }
+        .flex-item:nth-child(2) {
+            /* order: 3; */
+            z-index: 4;
+            transform: scale(2);
+        }
+        .flex-item:nth-child(3) {
+            /* order: 2; */
+            z-index: 5;
+            transform: scale(2.2);
         }
     </style>
 </head>
 
 <body>
-    <div class="page">
-        <header class="header flex-item">header</header>
-        <section class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis. Sequi laboriosam cum animi quod
-            deserunt qui explicabo eum, sed aliquam? Error saepe quos odio deserunt a voluptatem, perferendis pariatur
-            facilis quaerat earum deleniti quia omnis vitae velit ratione dignissimos optio atque, facere eos illo
-            veritatis voluptates? Blanditiis perferendis sunt unde repellat. Quaerat repellendus sed placeat. Est nemo
-            eum, quas odit sed ducimus minus vel blanditiis rerum ex quia beatae ipsum quasi quod nam fuga. Culpa quis
-            accusantium consectetur ipsam molestias dolores quae animi a ratione veritatis quo adipisci aut deleniti
-            commodi, nam voluptatum eos facere corrupti libero, nemo facilis!
-        </section>
-        <footer class="footer flex-item">footer</footer>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BB</div>
+        <div class="flex-item">CCCCCC</div>
+    </div>
 </body>
 
 </html>
