@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="../default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex-grow: 1;
+        }
+
+        .flex-item:nth-child(1) {
+            width: 20%;
+        }
+
+        .flex-item:nth-child(2) {
+            width: 60%;
+        }
+
+        .flex-item:nth-child(3) {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima, fugiat vero quas eos obcaecati.
+                Quidem, porro error commodi tempora optio ducimus enim facilis quisquam sequi ea. Error, ea facere!
+                Corporis facilis beatae ad tempora nulla, mollitia nemo placeat quos? Dolorem maiores nulla sed
+                perspiciatis esse consequuntur neque doloremque assumenda?</p>
+        </div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCCCC</div>
+        <div class="flex-item">DDDDDDDDDDDD</div>
+    </div>
+</body>
+
+</html>
