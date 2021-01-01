@@ -80,3 +80,14 @@
     background-position: top;
     background-size: 150%;
 }
+
+/* user list */
+.friend-item {
+    align-items: center;
+}
+
+.user-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
