@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                'none header header'
+                'sidebar-a main sidebar-b'
+                'footer footer footer';
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .sidebar-a {
+            grid-area: sidebar-a;
+        }
+
+        .sidebar-b {
+            grid-area: sidebar-b;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .grid-item {
+            display: inline;
+            padding: 10px;
+            border: 3px solid rgb(50, 50, 40);
+            color: white;
+            background-color: #ff6937;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header grid-item">Header</div>
+        <div class="sidebar-a grid-item">Sidebar A</div>
+        <div class="sidebar-b grid-item">Sidebar B</div>
+        <div class="main grid-item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
+            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
+            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
+            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
+            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
+            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
+            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
+            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
+            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
+            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
+            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
+            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
+            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
+            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
+            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
+            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
+            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
+            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
+            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
+            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
+            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
+            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
+        </div>
+        <div class="footer grid-item">Footer</div>
+    </div>
+</body>
+
+</html>
