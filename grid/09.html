@@ -8,34 +8,27 @@
     <style>
         .grid-container {
             display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            align-content: stretch;
+            /* align-content: start; */
+            /* align-content: center; */
+            /* align-content: end; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+            justify-content: stretch;
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* place-content: ; 축약형 */
+            height: 80vh;
             gap: 1rem;
-            grid-template-columns: 1fr 3fr 1fr;
-            grid-template-areas:
-                'none header header'
-                'sidebar-a main sidebar-b'
-                'footer footer footer';
             padding: 10px;
             background-color: lightgray;
-        }
-
-        .header {
-            grid-area: header;
-        }
-
-        .sidebar-a {
-            grid-area: sidebar-a;
-        }
-
-        .sidebar-b {
-            grid-area: sidebar-b;
-        }
-
-        .main {
-            grid-area: main;
-        }
-
-        .footer {
-            grid-area: footer;
         }
 
         .grid-item {
@@ -45,42 +38,32 @@
             color: white;
             background-color: #ff6937;
         }
+
+        .grid-item:nth-child(2) {
+            /* align-self: stretch; */
+            /* align-self: start; */
+            align-self: center;
+            /* align-self: end; */
+            /* justify-self: stretch; */
+            /* justify-self: start; */
+            justify-self: center;
+            /* justify-self: end; */
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="header grid-item">Header</div>
-        <div class="sidebar-a grid-item">Sidebar A</div>
-        <div class="sidebar-b grid-item">Sidebar B</div>
-        <div class="main grid-item">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
-            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
-            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
-            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
-            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
-            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
-            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
-            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
-            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
-            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
-            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
-            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
-            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
-            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
-            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate ex rem qui pariatur fuga
-            quibusdam, laboriosam, assumenda perferendis fugit molestias nobis! Temporibus veritatis voluptate eum est
-            neque ab inventore itaque culpa voluptatibus, tempore numquam recusandae animi deleniti, quia excepturi
-            error perspiciatis quos repellendus architecto nesciunt quas atque deserunt quibusdam pariatur! Numquam,
-            laboriosam! Soluta quasi aliquid ducimus, dolorum cupiditate mollitia nobis recusandae molestiae vitae a,
-            non quae facere obcaecati magni possimus consequatur omnis? Sit reiciendis voluptatem, commodi at eligendi
-            enim eveniet quas laudantium harum possimus est dolor a esse inventore laborum ipsum dignissimos
-            voluptatibus! Delectus quibusdam vero odio recusandae asperiores.
-        </div>
-        <div class="footer grid-item">Footer</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
     </div>
 </body>
 
