@@ -9,11 +9,9 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, minmax(200px, auto));
-            /* row-gap: 20px; */
-            /* column-gap: 20px; */
-            /* grid-gap: 20px; 구 버전 */
-            gap: 20px;
+            /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+            grid-auto-rows: minmax(100px, auto);
+            gap: 1rem;
             padding: 10px;
             background-color: lightgray;
         }
@@ -35,7 +33,15 @@
         <div class="grid-item">B</div>
         <div class="grid-item">C</div>
         <div class="grid-item">D</div>
-        <div class="grid-item">E</div>
+        <div class="grid-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repudiandae est itaque a dignissimos. Debitis
+            nemo beatae perferendis quos ipsam nulla vel sint dolores perspiciatis, impedit, aperiam commodi, qui
+            facilis!
+        </div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
         <div class="grid-item">F</div>
         <div class="grid-item">G</div>
         <div class="grid-item">H</div>
