@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,10 @@
     <style>
         .grid-container {
             display: grid;
-            /* grid-template-columns: 100px 300px 200px; */
-            /* grid-template-columns: 1fr 2fr 1fr; */
-            /* grid-template-columns: 1fr 500px 1fr; */
-            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-            grid-template-columns: repeat(3, 1fr);
-            /* grid-template-columns: repeat(3, 1fr 2fr 1fr); */
-            /* fr: fraction - 비, 비율, 분수, 부분 */
-            /* grid-template-rows: 200px 200px; */
-            /* grid-template-rows: repeat(2, 1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+            /* grid-template-rows: repeat(3, minmax(100px, auto)); */
             padding: 10px;
             background-color: lightgray;
-            height: 80vh;
         }
 
         .grid-item {
@@ -31,6 +24,7 @@
     </style>
     <title>Document</title>
 </head>
+
 <body>
     <div class="grid-container">
         <div class="grid-item">A</div>
@@ -44,4 +38,5 @@
         <div class="grid-item">I</div>
     </div>
 </body>
+
 </html>
