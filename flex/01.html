@@ -9,6 +9,9 @@
         .flex-container {
             display: inline-flex;
             flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse;
+            flex-wrap: nowrap; */
+            
             /* flex-flow: row wrap; 
                 flex-direction 과 flex-wrap 을 함께 쓴다
             */
@@ -21,10 +24,19 @@
     </style>
 </head>
 <body>
+    <!-- 
+    Flex 레이아웃은 Flex Container, Flex Item으로
+    이루어집니다.
+    컨테이너가 Flex의 영향을 받는 전체 공간이고,
+    설정된 속성에 따라 각각의 아이템들이 어떠한 형태로
+    배치되는 것입니다. 
+    flex는 컬럼의 높이가 자동으로 맞춰집니다.
+    flex-direction으로 메인축의 방향을 정할 수 있습니다.
+    -->
     <div class="flex-container">
-        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
-        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBB</div>
-        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCC</div>
     </div>
 </body>
 </html>
