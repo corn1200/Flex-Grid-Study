@@ -7,6 +7,13 @@
     <title>CSS Flex</title>
     <link rel="stylesheet" href="../default.css">
     <style>
+        /* flex-grow는 유연하게 늘리기
+        빈 공간을 메우게 됨, 유연한 박스로 변함
+        기본값은 0 기본적으로 유연하지 않음
+        flex-grow에 들어가는 숫자의 의미는 아이템들의
+        flex-basis를 제외한 여백 부분을
+        flex-grow에 지정된 숫자의 비율로 나누어
+        가집니다. */
         .flex-container {
             display: flex;
         }
